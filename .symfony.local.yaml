@@ -1,0 +1,13 @@
+# Sets domain1.wip and domain2.wip for the current project
+proxy:
+  domains:
+    - domain1
+    - domain2
+
+http:
+  port: 9000 # Force the port that will be used to run the server
+  preferred_port: 9001 # Preferred HTTP port [default: 8000]
+  allow_http: true # Prevent auto-redirection from HTTP to HTTPS
+  no_tls: true # Use HTTP instead of HTTPS
+  use_gzip: true # Toggle GZIP compression
+  no_workers: true # Do not start workers
